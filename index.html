@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Dash Game</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #ffffff; /* Changed from #white to #ffffff */
+            font-family: Arial, sans-serif;
+        }
+
+        #game-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-color: #ff5b00; /* Changed from #hs1 to #ff5b00 */
+            overflow: hidden;
+        }
+
+        #player {
+            position: absolute;
+            bottom: 0px;
+            left: 50px;
+            width: 50px;
+            height: 50px;
+            background-color: #ffcc00; /* Adjusted player color */
+        }
+
+        .obstacle {
+            position: absolute;
+            bottom: 0;
+            width: 30px;
+            height: 30px;
+            background-color: #ff0000; /* Adjusted obstacle color */
+        }
+
+        #score {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 20px;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <div id="player"></div>
+        <div id="score">Score: 0</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
