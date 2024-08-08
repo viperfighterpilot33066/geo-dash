@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function gameOver() {
         clearInterval(obstacleInterval);
-        alert('Game Over!');
+        alert('Game Over!'+ score);
         window.location.reload(); // Reload the page to restart the game
     }
 
